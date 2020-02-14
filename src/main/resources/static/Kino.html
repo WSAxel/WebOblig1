@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kino</title>
+    <script src="KinoJS2.js"> </script>
+    <link rel="stylesheet" type="text/css" href="KinoStyle.css">
+</head>
+  <body>
+  <h1>Bestilling av Kinobiletter</h1>
+     <table>
+         <tr><td> Velg Film</td><td> <select id="filmer" onchange="VelgFilm">
+             <option>Pulp Fiction</option>
+             <option>Die Hard</option>
+             <option>Kongens Nei</option>
+             <option>Tropic Thunder</option>
+         </select> </td></tr>
+
+         <tr>
+             <td> Antall</td><td> <input type="text" id="Antall"> <div id="ant"></div></td>
+         </tr>
+
+         <tr>
+             <td> Fornavn</td><td><input type="text" id="Fornavn"> <div id="for"></div></td>
+         </tr>
+         <tr>
+             <td>Etternavn</td><td><input type="text" id="Etternavn"> <div id="etter"></div></td>
+         </tr>
+         <tr>
+             <td>Telefon</td><td><input type="text" id="Telefon"> <div id="tel"></div></td>
+         </tr>
+         <tr>
+             <td>Epost</td><td><input type="text" id="Epost"> <div id="epo"></div></td>
+         </tr>
+
+         <tr>
+             <td> <button onclick="Usikker()">Kjøp Billett</button></td>
+         </tr>
+
+
+     </table>
+
+  <h2>Alle Billetter</h2>
+  <p id="ut"> </p>
+  <tr><td><button onclick="Slette()">Slett Alle Billettene</button></td></tr>
+
+  </body>
+</html>
